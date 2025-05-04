@@ -9,6 +9,6 @@ app.use(express.json());
 app.use("/api/users", UserRoute);
 app.use("/api/products", ProductRoute);
 
-app.listen(9999, "https://render-deployment1.onrender.com", () => {
+app.listen(9999, () => {
   console.log("Server Started");
 });
