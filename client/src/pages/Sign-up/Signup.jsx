@@ -101,7 +101,10 @@ const SignUp = () => {
       gender: genderRef.current.value,
     };
     axios
-      .post("http://localhost:9999/api/users/sign-up", newuser)
+      .post(
+        "https://render-deployment1.onrender.com/api/users/sign-up",
+        newuser
+      )
       .then((res) => {
         if (res.data.ok) {
           alert("User Created");
